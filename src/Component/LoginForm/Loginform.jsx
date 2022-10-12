@@ -86,8 +86,10 @@ const Loginform = () => {
               password: "",
             });
 
+            setTimeout(() => {
+              navigate("/home");
+            }, 1000);
             toast.success("Login Success");
-            navigate("/home");
 
           })
           .catch((err) => {

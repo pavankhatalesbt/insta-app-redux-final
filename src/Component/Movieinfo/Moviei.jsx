@@ -29,7 +29,7 @@ const Moviei = () => {
         `https://api.themoviedb.org/3/movie/${id}?api_key=b7f77b88848378309fc867cd549a0964&language=en-US`
       );
 
-      console.log(temp.data);
+      // console.log(temp.data);
       dispatch(movieinfoaction(temp.data));
     } catch (error) {
       console.log(error);
